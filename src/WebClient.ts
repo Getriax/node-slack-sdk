@@ -640,6 +640,10 @@ export class WebClient extends EventEmitter {
       get: (this.apiCall.bind(this, 'users.profile.get')) as Method<methods.UsersProfileGetArguments>,
       set: (this.apiCall.bind(this, 'users.profile.set')) as Method<methods.UsersProfileSetArguments>,
     },
+    prefs: {
+      get: (this.apiCall.bind(this, 'users.prefs.get')) as Method<methods.UsersPrefsGetArguments>,
+      set: (this.apiCall.bind(this, 'users.profile.set')) as Method<methods.UsersPrefsSetArguments>,
+    }
   };
 
   /**
