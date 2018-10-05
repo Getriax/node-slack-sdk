@@ -335,8 +335,8 @@ class WebClient extends EventEmitter {
             },
             prefs: {
                 get: (this.apiCall.bind(this, 'users.prefs.get')),
-                set: (this.apiCall.bind(this, 'users.profile.set')),
-            }
+                set: (this.apiCall.bind(this, 'users.prefs.set')),
+            },
         };
         this._accessToken = token;
         this.clientId = clientId;
